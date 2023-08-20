@@ -1,0 +1,30 @@
+* {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #000;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 480px;
+    height: 100%;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a, span {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+

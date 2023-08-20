@@ -1,0 +1,39 @@
+#nav {
+    width: 480px;
+    height: 80px;
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #F5F5F5;
+    padding: 20px;
+    .nav_list {
+        display: flex;
+        justify-content: space-between;
+        .nav_item {
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+            .menu_button {
+                span {
+                    &::before {
+                        font-size: 24px;
+                        padding-left: 2px;
+                        color: #888;
+                        transition: all .2s ease-in-out;
+                    }
+                }
+                > p {
+                    font-size: 12px;
+                    text-align: center;
+                    color: #888;
+                    transition: all .2s ease-in-out;
+                }
+                &.active {
+                    span::before {color: #000;}
+                    > p {color: #000;}
+                }
+            }   
+        }
+    }
+}

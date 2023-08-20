@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
+import { AxiosInterceptor } from "./api/axios";
 
-function App() {
+import "./assets/styles/style.scss";
+
+import Loading from "./components/common/Loading";
+import Layout from "./components/layout/Layout";
+import NoPage from "./components/common/NoPage";
+import Main from "./components/main/Main";
+import Search from "./components/pages/search/Search";
+import Review from "./components/pages/review/Review";
+import News from "./components/pages/news/News";
+import MyPage from "./components/pages/myPage/MyPage";
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="app">
+      <AxiosInterceptor>
+        <Suspense fallback={<Loading />}>
+          <Routes>
+            <Route element={<Layout />}>
+              <Route path="*" element={<NoPage />} />
+              <Route path="/" element={<Main />} />
+              <Route path="/search" element={<Search />} />
+              <Route path="/review" element={<Review />} />
+              <Route path="/news" element={<News />} />
+              <Route path="/myPage" element={<MyPage />} />
+            </Route>
+          </Routes>
+        </Suspense>
+      </AxiosInterceptor>
     </div>
   );
-}
+};
 
 export default App;
