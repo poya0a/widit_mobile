@@ -1,0 +1,16 @@
+@media all and (max-width: 1100px){
+    .media_list .list {
+        width: 250%;
+        .media_item {
+            width: 25%;
+        }
+    }
+}
+@media all and (max-width: 760px){
+    .media_list .list {
+        width: 300%;
+        .media_item {
+            width: 30%;
+        }
+    }
+}

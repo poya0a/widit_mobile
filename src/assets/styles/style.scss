@@ -1,5 +1,6 @@
 // common
 @import 'common/reset';
+@import 'common/response';
 @import 'common/header';
 @import 'common/main';
 @import 'common/footer';
@@ -8,7 +9,11 @@
 @import 'common/login';
 @import 'common/join';
 @import 'common/button';
+@import 'common/mediaList';
+@import 'common/mediaItem';
+@import 'common/searchBar';
 
 //pages
+@import 'pages/news'
 
 //popup

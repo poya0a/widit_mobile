@@ -1,0 +1,22 @@
+#news {
+    width: 100%;
+    height: 100%;
+    padding: 100px 15px;
+    .news_menu_button {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        > button {
+            font-size: 14px;
+            font-weight: 600;
+            border-bottom: 1px solid #F5F5F5;
+            transition: all .3s ease-in-out;
+            &.active {
+                border-bottom: 2px solid #000;
+            }
+        }
+    }
+    .news_list {
+        .news_item {}
+    }
+}

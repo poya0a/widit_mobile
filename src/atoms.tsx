@@ -18,6 +18,11 @@ const weekendMonth = String(newDate.getMonth() + 1).padStart(2, "0");
 const weekendDay = String(newDate.getDate()).padStart(2, "0");
 const lastWeekendDateString = weekendYear + weekendMonth + weekendDay;
 
+export const navState: RecoilState<string> = atom({
+  key: "navState",
+  default: "home",
+});
+
 export const todayState: RecoilState<string> = atom({
   key: "todayState",
   default: todayDateString,
