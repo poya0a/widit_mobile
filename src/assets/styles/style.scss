@@ -2,18 +2,16 @@
 @import 'common/reset';
 @import 'common/response';
 @import 'common/header';
-@import 'common/main';
 @import 'common/footer';
 @import 'common/nav';
-@import 'common/memberPopup';
-@import 'common/login';
 @import 'common/join';
 @import 'common/button';
-@import 'common/mediaList';
-@import 'common/mediaItem';
 @import 'common/searchBar';
+@import 'common/post';
 
 //pages
-@import 'pages/news'
+@import 'pages/main';
+@import 'pages/news';
+
 
 //popup

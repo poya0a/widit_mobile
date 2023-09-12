@@ -9,10 +9,9 @@ import Layout from "./components/layout/Layout";
 import NoPage from "./components/common/NoPage";
 import Main from "./components/main/Main";
 import Search from "./components/pages/search/Search";
-import Review from "./components/pages/review/Review";
+import Write from "./components/pages/write/Write";
 import News from "./components/pages/news/News";
 import MyPage from "./components/pages/myPage/MyPage";
-
 
 const App = () => {
   return (
@@ -24,7 +23,7 @@ const App = () => {
               <Route path="*" element={<NoPage />} />
               <Route path="/" element={<Main />} />
               <Route path="/search" element={<Search />} />
-              <Route path="/review" element={<Review />} />
+              <Route path="/write" element={<Write />} />
               <Route path="/news" element={<News />} />
               <Route path="/myPage" element={<MyPage />} />
             </Route>
